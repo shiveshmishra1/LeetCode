@@ -47,7 +47,7 @@ class Solution {
                     // Add 1 second for movement
                     long newTime = waitTime + 1;
                     
-                    // If we found a better time to reach this cell
+                    // If we found a better time to reach this cells
                     if (newTime < dp[newRow][newCol]) {
                         dp[newRow][newCol] = newTime;
                         queue.offer(new int[]{newRow, newCol, (int)newTime});
